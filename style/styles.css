@@ -48,7 +48,7 @@ font-weight: 800;
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto;
-    padding: 250px 100px;
+    padding: 200px 100px;
 }
 .center-text{
     text-align: center;
@@ -77,8 +77,7 @@ margin-left: 270px;
     padding: 20px;
     gap: 24px;
     margin-top: 25px;
-    margin-left: 150px;
-    width: 255px;
+    margin-left: 50px;
 }
 .input-size{
     padding: 20px;
@@ -95,6 +94,47 @@ margin-left: 270px;
 background: #FF5400;
 width: 255px;
 margin: 0 auto;
+}
+/* popular */
+.tours-list li{
+   padding-bottom: 25px;
+   width: 525px ;
+}
+.tours-list{
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+.popular-tours{
+    color: #131318;
+font-size: 40px;
+font-weight: 800;
+margin-top: 0;
+}
+.tours-des{
+    color: rgba(19, 19, 24, 0.70);
+font-size: 16px;
+font-weight: 400;
+width: 577px;
+}
+.tours-end-des{
+    font-size: 16px;
+    font-weight: 400;
+    width: 530px;
+}
+.read-btn{
+    border-radius: 8px;
+background: #FF5400;
+font-weight: 800;
+color: #FFF;
+font-size: 20px;
+width: 174px;
+padding: 20px;
+border: none;
+}
+.popular-div{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
 }
 /* responsive styles  */
 /* mobile device  */
@@ -120,7 +160,7 @@ margin: 0 auto;
     .back-img{
         width: 335px;
         background-position: center;
-        padding: 120px 20px;
+        padding: 110px 5px;
     }
     .banner-text{
         font-size: 22px;
@@ -141,5 +181,35 @@ margin: 0 auto;
         margin-right: 20px;
         margin-bottom: -80px;
         margin-top: 30px;
+    }
+    .popular-div{
+        flex-direction: column; 
+    }
+    .popular-pad{
+        padding-bottom: 25px;
+    }
+    .popular-div li {
+        width: 100%;
+    }
+    .tours-des{
+        width: 335px;
+        margin-left: 25px;
+    }
+    .popular-tours{
+        font-size: 20px;
+        margin-left: 25px;
+
+    }
+    .tours-end-des {
+        margin-left: 25px;
+        width: 335px;
+    }
+    .read-btn{
+        width: 174px;
+        margin-left: 25px;
+    }
+    .popular-div img{
+        width: 335px;
+        margin-left: 25px;
     }
 }
