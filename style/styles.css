@@ -38,7 +38,7 @@ li > a{
 font-size: 45px;
 font-weight: 800;
 }
-.img-icon{
+.icon-img{
     margin-right: 0;
 }
 /* back-img   */
@@ -88,12 +88,26 @@ margin-left: 270px;
     border: none;
     width: 215px;
 }
+.ankor-search{
+    text-decoration: none;
+    list-style: none;
+    color: #FFF;
+    font-size: 16px; 
+    margin-left: -80px;
+    font-weight: 700; 
+}
+.search-btn{
+    width: 16px;
+    height: 16px; 
+    margin-left: -100px;
+    margin-right: 0;
+
+}
 #btn-color{
     color: #FFF;
     border-radius: 8px;
 background: #FF5400;
 width: 255px;
-margin: 0 auto;
 }
 /* popular */
 .tours-list li{
@@ -321,9 +335,12 @@ background: rgba(41, 206, 246, 0.05);
     border-radius: 16px;
     border: 1px solid rgba(233, 68, 68, 0.20);
     background: rgba(233, 68, 68, 0.05);
-    margin-left: 350px;
-    margin-right: 350px;
+    margin-left: 400px;
+    margin-right: 400px;
     margin-bottom: 100px;
+}
+.Best-Price p{
+    width: 486px;
 }
 .flex-position-price{
     margin-top: 50px;
@@ -647,27 +664,32 @@ text-align: center;
         padding: 0;
     }
     .banner-container{
-        display: flex;
+        /* display: flex; */
+        /* flex-direction: column; */
         margin-bottom: 25px;
         margin-top: -20px;
     }
+    nav{
+        /* width: 34px; */
+    }
     #topnav{
-        margin-left: -1520px;
-        margin-top: 100px;
-        justify-content: space-evenly;
+        
     }
     #topnav a{
         font-size: 8px;
+        display: none;
     }
     .nav-title{
-        font-size: 21.543px;
+        font-size: 15px;
         font-weight: 800;
+        width: 120px;
+        padding: 27px;
     }
     .travel-color{
-        font-size: 21.543px;
+        font-size: 15px;
         font-weight: 800;
     }
-    .img-icon{
+    .icon-img{
         width: 28.724px;
     }
     .back-img{
@@ -697,9 +719,11 @@ text-align: center;
     }
     .popular-div{
         flex-direction: column; 
+        margin-top: 30px;
     }
     .popular-pad{
         padding-bottom: 25px;
+        margin-left: -15px;
     }
     .popular-div li {
         width: 100%;
@@ -723,7 +747,7 @@ text-align: center;
     }
     .popular-div img{
         width: 335px;
-        margin-left: 25px;
+        margin-left: 5px;
     }
     .row{
         flex-direction: column;
@@ -745,13 +769,13 @@ text-align: center;
     /* Why Choose Us */
     .all-choose{
         font-size: 20px;
-        margin-left: -130px;
+        margin-left: -160px;
         font-weight: 800;
-        width: 154px;
+        width: 190px;
     }
     .all-dis{
         width: 309px;
-        margin-left: -205px;
+        margin-left: -225px;
         font-size: 14px;
         font-weight: 400;
     }
@@ -759,33 +783,34 @@ text-align: center;
         flex-direction: column;
         width: 335px;
         height: 289px;
-        margin-left: -225px;
+        margin-left: -235px;
     }
     .Best-Price{
         width: 335px;
         height: 289px;
-        margin-left: -225px;
-        margin-top: 370px;
+        margin-left: -235px;
+        margin-top: 350px;
         font-size: 15px;
+    }
+    .Best-Price p{
+        width: 271px; 
     }
     /* discount */
     .all-discount{
-        color: #131318;
         width: 309px;
-        margin-left: -205px;
+        margin-left: -225px;
         font-size: 20px;
-        font-weight: 800;
     }
     .first-bg{
         width: 120px;
         height: 500px;
-        margin-left: -225px;
+        margin-left: -237px;
         background-position: center;
     }
     .secoend-bg{
         width: 120px;
         height: 500px;
-        margin-left: -225px;
+        margin-left: -237px;
         background-position: center;
     }
     .inroll-text, .inroll-text-secoend {
@@ -856,7 +881,7 @@ margin-left: 15px;
 margin-top: -15px;
 }
 .see-all{
-    margin-left: -160px;
+    margin-left: -170px;
 }
 /* simple-place  */
 .simple-place-flex{
@@ -865,27 +890,27 @@ margin-top: -15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 100px;
-    margin-left: -230px;
+    margin-top: 60px;
+    margin-left: -237px;
     gap: 50px;
 }
 .video-bd video{
-    width: 350px;
+    width: 340px;
     height: 100%;
     background-position: center;
     border-radius: 16px;
     position: relative;
     opacity: 50%;
-    margin-top: -250px;
+    margin-top: -260px;
     
 }
 .video-bd h2{
     /* width: 276px; */
     font-size: 20px;
-    margin-left: 40px;
+    margin-left: 35px;
 }
 .video-bd{
-    width: 350px;
+    width: 340px;
     height: 100%;
 }
 .simple-place h1{
@@ -902,17 +927,18 @@ margin-top: -15px;
     color: #131318;
     font-size: 14px;
     font-weight: 700;
-    margin-left: -20px;
+    margin-left: -30px;
 }
 /* Newsletter */
 .last-flex{
+    margin-top: 50px;
     flex-direction: column;
     gap: 35px;
 }
 .Newsletter{
-    width: 345px;
+    width: 335px;
     height: 353px;
-    margin-left: -230px;
+    margin-left: -237px;
 }
 .Newsletter h2{
     font-size: 20px;
@@ -942,8 +968,8 @@ margin-top: -15px;
 .rotate{
     width: 324px;
     transform: rotate(-19.628deg);
-    right: 210px;
-    top: -140px;
+    right: 225px;
+    top: -145px;
     padding: 5px 2px;
 }
 .com{
@@ -954,30 +980,30 @@ margin-top: -15px;
     font-size: 28px;
 }
 .last-img{
-    width: 345px;
+    width: 340px;
     height: 300px;
-    margin-left: -230px;
+    margin-left: -237px;
 }
 footer{
     background: rgba(19, 19, 24, 0.05);
-    padding: 30px;
+    padding: 20px;
 }
 .last-footer{
     display: flex;
-    margin-left: -50px;
+    margin-left: -30px;
 
 }
 .last-footer h1{
-    margin-top: -10px;
+    margin-top: 20px;
     margin-left: 10px;
     margin-bottom: 0;
 }
 .last-footer img{
     width: 40px;
 height: 46.673px;
-margin-top: -10px;
+margin-top: 20px;
 margin-bottom: 0;
-margin-left: 90px;
+margin-left: 70px;
 }
 hr{
     width: 300px;
