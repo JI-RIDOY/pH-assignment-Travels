@@ -4,24 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Waypoint Travels</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style/styles.css">
 </head>
 <body>
     <header>
         <section class="banner-container">
-            <nav>
-                <img class="icon-img" src="Images/Group 40071 (2).png" alt="">
-                <h3 class="nav-title">Way <span class="travel-color">Travel</span></h3>
-                <ul id="topnav">
-                    <li><a href=""><span class="home">Home</span></a></li>
-                    <li><a href="">Packages</a></li>
-                    <li><a href="">Testimonial</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
-            </nav>
+            <div class="topnav">
+                <div class="way">
+                    <img class="icon-img" src="Images/Group 40071 (2).png" alt="">
+                <h3 class="active"><span class="nav-title">Way </span><span class="travel-color">Travel</span></h3>
+                </div>
+                <div id="myLinks">
+                  <a href="#"><span class="home">Home</span></a>
+                  <a href="#">Packages</a>
+                  <a href="#">Testimonial</a>
+                  <a href="#">Blog</a>
+                  <a href="#">Contact</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
         </section>
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myLinks");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+            }
+            </script>
         <section class="back-img">
             <div class="center-text">
                 <h1 class="banner-text">Explore Your Travel</h1>

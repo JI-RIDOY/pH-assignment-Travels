@@ -7,27 +7,53 @@ header{
     margin-top: 0;
     padding: 50px 240px;
 }
-nav{
+.icon{
+    border-radius: 16px;
+}
+.topnav a.icon {
+    background: black;
+    display: block;
+    position: relative;
+    padding: 40px 40px;
+    margin-bottom: 50px;
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: #FF5400 ;
+  }
+  .topnav a {
+    color: white;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+.way{
+    display: flex;
+}
+#myLinks a{
+list-style: none;
+text-decoration: none;
+margin-right: 30px;
+font-size: 18px;
+color: var(--Dark-02, #424247);
+font-weight: 400;
+}
+.home{
+    color: #FF5400;
+    font-size: 18px;
+    font-weight: 700;
+}
+.topnav{
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
-nav > ul{
-    display: flex;
-}
-nav li{
-    list-style: none;
-    margin-right: 50px;
-    font-weight: 500;
-    font-size: 18px;
-}
-li > a{
-    text-decoration: none;
+.active{
+    margin-top: -15px;
+    margin-left: 10px;
 }
 .nav-title{
         font-size: 45px;
         font-weight: 800;
-        width: 1440px;
         color: var(--Dark-01, #131313);
 }
 .home{
@@ -39,7 +65,9 @@ font-size: 45px;
 font-weight: 800;
 }
 .icon-img{
-    margin-right: 0;
+    width: 48px;
+height: 56.008px;
+margin-top: -13px;
 }
 /* back-img   */
 .back-img{
@@ -307,7 +335,7 @@ font-weight: 800;
 font-size: 16px;
 font-weight: 400;
 width: 643px;
-margin: 0 auto;
+/* margin: 0 auto; */
 }
 .choose-flex{
     display: flex;
@@ -664,36 +692,58 @@ text-align: center;
         padding: 0;
     }
     .banner-container{
-        /* display: flex; */
-        /* flex-direction: column; */
-        margin-bottom: 25px;
-        margin-top: -20px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        margin-bottom: 5px;
     }
-    nav{
-        /* width: 34px; */
-    }
-    #topnav{
-        
-    }
-    #topnav a{
-        font-size: 8px;
-        display: none;
-    }
-    .nav-title{
-        font-size: 15px;
-        font-weight: 800;
-        width: 120px;
-        padding: 27px;
-    }
-    .travel-color{
-        font-size: 15px;
-        font-weight: 800;
+    .icon{
+        display: inline;
+        border-radius: 16px;
     }
     .icon-img{
         width: 28.724px;
+        height: 33.516px;
+        margin-top: 9px;
     }
+    .topnav {
+        overflow: hidden;
+        position: relative;
+        border-radius: 16px;
+      }
+      .active{
+        margin-top: 10px;
+      }
+      .nav-title{
+        font-size: 22px;
+      }
+      .travel-color{
+        font-size: 22px;
+      }
+      .topnav #myLinks {
+        display: none;
+      }
+      .topnav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        float: right;
+      }
+      .topnav a.icon {
+        background: black;
+        display: block;
+        position: relative;
+        padding: 20px;
+        margin-bottom: 50px;
+        margin-top: 10px;
+      }
+      .topnav a:hover {
+        background-color: #ddd;
+        color: #FF5400 ;
+      }
     .back-img{
-        width: 335px;
+        /* width: 335px; */
         background-position: center;
         padding: 110px 5px;
     }
@@ -766,16 +816,20 @@ text-align: center;
         gap: 0;
         background-position: center;
     }
+    main{
+        padding: 0;
+    }
     /* Why Choose Us */
     .all-choose{
+        margin-top: 80px;
         font-size: 20px;
-        margin-left: -160px;
+        margin-left: 70px;
         font-weight: 800;
         width: 190px;
     }
     .all-dis{
         width: 309px;
-        margin-left: -225px;
+        margin-left: 15px;
         font-size: 14px;
         font-weight: 400;
     }
@@ -783,13 +837,13 @@ text-align: center;
         flex-direction: column;
         width: 335px;
         height: 289px;
-        margin-left: -235px;
+        margin-left: 5px;
     }
     .Best-Price{
         width: 335px;
         height: 289px;
-        margin-left: -235px;
-        margin-top: 350px;
+        margin-left: 5px;
+        margin-top: 375px;
         font-size: 15px;
     }
     .Best-Price p{
@@ -798,19 +852,19 @@ text-align: center;
     /* discount */
     .all-discount{
         width: 309px;
-        margin-left: -225px;
+        margin-left: 15px;
         font-size: 20px;
     }
     .first-bg{
         width: 120px;
         height: 500px;
-        margin-left: -237px;
+        margin-left: 4px;
         background-position: center;
     }
     .secoend-bg{
         width: 120px;
         height: 500px;
-        margin-left: -237px;
+        margin-left: 4px;
         background-position: center;
     }
     .inroll-text, .inroll-text-secoend {
@@ -881,7 +935,7 @@ margin-left: 15px;
 margin-top: -15px;
 }
 .see-all{
-    margin-left: -170px;
+    margin-left: 70px;
 }
 /* simple-place  */
 .simple-place-flex{
@@ -891,7 +945,7 @@ margin-top: -15px;
     flex-direction: column;
     justify-content: space-between;
     margin-top: 60px;
-    margin-left: -237px;
+    margin-left: 5px;
     gap: 50px;
 }
 .video-bd video{
@@ -938,7 +992,7 @@ margin-top: -15px;
 .Newsletter{
     width: 335px;
     height: 353px;
-    margin-left: -237px;
+    margin-left: 4px;
 }
 .Newsletter h2{
     font-size: 20px;
@@ -968,9 +1022,9 @@ margin-top: -15px;
 .rotate{
     width: 324px;
     transform: rotate(-19.628deg);
-    right: 225px;
+    right: -15px;
     top: -145px;
-    padding: 5px 2px;
+    padding: 3px 2px;
 }
 .com{
     font-size: 20px;
@@ -982,11 +1036,14 @@ margin-top: -15px;
 .last-img{
     width: 340px;
     height: 300px;
-    margin-left: -237px;
+    margin-left: 4px;
 }
 footer{
     background: rgba(19, 19, 24, 0.05);
     padding: 20px;
+}
+footer{
+    padding: 0;
 }
 .last-footer{
     display: flex;
@@ -1011,6 +1068,6 @@ hr{
 .last-dis{
     width: 287px;
     margin-top: 20px;
-    margin-left: 10px;
+    margin-left: 30px;
 }
 }
