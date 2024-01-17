@@ -187,6 +187,9 @@ border: none;
 font-size: 40px;
 font-weight: 800;
 }
+.food-des{
+    font-size: 25px;
+}
 .all-des{
     color: rgba(19, 19, 24, 0.70);
 font-size: 16px;
@@ -211,7 +214,22 @@ margin: 0 auto;
     font-size: 28px;
     font-weight: 800;
 }
+.White-Truffle{
+    background: linear-gradient( rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url('../Images/Italian-White-Truffle.jpg');
+    width: 50%;
+    height: 400px ;
+    background-size: cover;
+    border-radius: 16px;
+    text-align: center;
+    margin-top: 50px;
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 800;
+}
 .Maldives h3{
+    margin-top: 180px;
+}
+.White-Truffle h3{
     margin-top: 180px;
 }
 .Indonesia{
@@ -227,7 +245,23 @@ margin: 0 auto;
     font-size: 28px;
     font-weight: 800;
 }
+.Wagyu-Beef{
+    background: linear-gradient( rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url('../Images/Grilled-japanese.jpg');
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 400px ;
+    background-size: cover;
+    border-radius: 16px;
+    text-align: center;
+    margin-top: 50px;
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 800;
+}
 .Indonesia h3{
+    margin-top: 180px;
+}
+.Wagyu-Beef h3{
     margin-top: 180px;
 }
 .Srilanka{
@@ -244,7 +278,24 @@ margin: 0 auto;
     font-size: 28px;
     font-weight: 800;
 }
+.Foie-Gras{
+    background: linear-gradient( rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url('../Images/foie-gras.jpg');
+    background-repeat: no-repeat;
+    width: 30%;
+    height: 300px ;
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+    text-align: center;
+    margin-top: 50px;
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 800;
+}
 .Srilanka h3{
+    margin-top: 140px;
+}
+.Foie-Gras h3{
     margin-top: 140px;
 }
 .North-America{
@@ -261,7 +312,24 @@ margin: 0 auto;
     font-size: 28px;
     font-weight: 800;
 }
+.Oysters{
+    background: linear-gradient( rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url('../Images/Open-Oysters-Fines.jpg');
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 300px ;
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+    text-align: center;
+    margin-top: 50px;
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 800;
+}
 .North-America h3{
+    margin-top: 140px;
+}
+.Oysters h3{
     margin-top: 140px;
 }
 .Kashmir{
@@ -278,7 +346,24 @@ margin: 0 auto;
     font-size: 28px;
     font-weight: 800;
 }
+.Almas-Caviar{
+    background: linear-gradient( rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url('../Images/Almas-Caviar.jpg');
+    background-repeat: no-repeat;
+    width: 30%;
+    height: 300px ;
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+    text-align: center;
+    margin-top: 50px;
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 800;
+}
 .Kashmir h3{
+    margin-top: 140px;
+}
+.Almas-Caviar h3{
     margin-top: 140px;
 }
 .Bangladesh{
@@ -335,6 +420,7 @@ font-weight: 800;
 font-size: 16px;
 font-weight: 400;
 width: 643px;
+margin-left: 380px;
 /* margin: 0 auto; */
 }
 .choose-flex{
@@ -652,6 +738,9 @@ footer{
 .footer{
     text-align: center;
 }
+.color{
+    color: #FF5400;
+}
 .last-footer{
     display: flex;
     margin-left: 500px;
@@ -811,6 +900,12 @@ text-align: center;
         width: 309px ;
     }
     .Maldives, .Indonesia, .Srilanka, .North-America, .Kashmir, .Bangladesh, .Bandarban{
+        width: 350px;
+        height: 100%;
+        gap: 0;
+        background-position: center;
+    }
+    .White-Truffle, .Wagyu-Beef, .Foie-Gras, .Oysters, .Almas-Caviar{
         width: 350px;
         height: 100%;
         gap: 0;
